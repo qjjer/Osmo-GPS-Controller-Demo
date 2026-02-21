@@ -206,10 +206,10 @@ static void handle_boot_single_press() {
 
     /* Switch camera to Hyperlapse mode */
     /* 切换相机至运动延时模式 */
-    // camera_mode_switch_response_frame_t *switch_response = command_logic_switch_camera_mode(CAMERA_MODE_HYPERLAPSE);
-    // if (switch_response != NULL) {
-    //     free(switch_response);
-    // }
+     camera_mode_switch_response_frame_t *switch_response = command_logic_switch_camera_mode(CAMERA_MODE_HYPERLAPSE);
+     if (switch_response != NULL) {
+         free(switch_response);
+     }
 
     /* 发送原始字节测试 */
     /* Send raw bytes test */
