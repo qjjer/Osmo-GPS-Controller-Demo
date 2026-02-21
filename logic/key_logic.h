@@ -28,6 +28,12 @@
                                   // Assume BOOT button is connected to GPIO 9
 #define QS_KEY_GPIO   GPIO_NUM_6  
 
+typedef enum {
+    KEY_ID_BOOT = 0,
+    KEY_ID_QS,
+    KEY_ID_MAX,
+} key_id_t;
+
 // 按键事件
 // Key Events
 typedef enum {
