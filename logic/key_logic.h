@@ -42,6 +42,7 @@ typedef enum {
 } key_event_t;
 
 void key_logic_init(void);
+void key_logic_process(void);
 
 key_event_t key_logic_get_event(void);
 
