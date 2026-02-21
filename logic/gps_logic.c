@@ -675,7 +675,7 @@ void initSendGpsDataToCameraTask(void) {
     // "$PAIR050,500*26\r\n" for 5Hz update rate
     // "$PAIR050,100*22\r\n" 为 10Hz 更新率
     // "$PAIR050,100*22\r\n" for 10Hz update rate
-    char* gps_command = "$PAIR050,100*22\r\n";  // （>1Hz 仅 RMC 和 GGA 支持）
+    char* gps_command = "$PCAS02,100*22\r\n";  // （>1Hz 仅 RMC 和 GGA 支持）
                                                 // (>1Hz only RMC and GGA supported)
     uart_write_bytes(UART_GPS_PORT, gps_command, strlen(gps_command));
     
